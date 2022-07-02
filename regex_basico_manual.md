@@ -20,7 +20,7 @@ Uso de alguns caracteres especiais são "Uso exclusivo" do regex, dessa forma te
 
 ^ -> Inicio do paragrafo
 
-[] = caixa de caracteres -> Uma seleção de ocorrencia, Ex: [a-zA-z]-> Selecione todos os caracteres entre "a" a "z" em upper e slow case
+[] = caixa de caracteres -> Uma seleção de ocorrencia, Ex: [a-zA-z]-> Selecione todos os caracteres entre "a" a "z" em upper e slow case, a caixa de seleção tambem funciona como um grande OU, Ex: [a2] -> Ele vai mostrar todas as ocorrencias de "a" ou "2" do texto alvo
 
 Selecione todos os caracteres que forme uma sequencia \w
 
