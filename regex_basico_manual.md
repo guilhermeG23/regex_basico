@@ -56,3 +56,17 @@ Selecionar somente o primeiro valor de uma decisão, Ex: teste(?=\1), isso é, s
 A forma negativa de seu uso é trocar o = por ! como negação
 
 \b = boundre, limitador de uma palavra
+
+
+___
+
+Exemplos:
+
+```[0]``` -> Mostra todas as ocorrencias de 0 dentro do texto;
+```[0][0]``` -> Mostra todas as ocorrencias de 00 dentro do texto;
+```[0]{2}``` -> Mostra todas as ocorrencias com o operador de multiplicação, é o mesmo 00, más esse é de uma forma mais inteligente de fazer;
+```[0-9]{6}``` -> Todas as ocorrencias de 0 a 9 dos 6 primeiros caracteres alvo;
+```[0-9]{6}$``` -> Todas as ocorrencias de 0 a 9 dos 6 ultimos caracteres alvo, Ex: numa linha com 10 numeros, ele vai selecionar os 6 ultimos numeros desses 10;
+```^[0-9]{6}$``` -> Todas as ocorrencias de 0 a 9 dos 6 primeiros caracteres alvo com fim de seleção, isso é, só será selecionada a primeira palavra das frases que tenha 6 caracteres e tenha numeros;
+```^[0-9]+$``` -> O + é uma seleção sem fim de caracteres, ele é modular, podendo selecionar de 1 a infinito;
+
